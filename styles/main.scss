@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Lobster_1_4';
+    src: url('fonts/Lobster_1_4.eot');
+    src: url('fonts/Lobster_1_4.eot') format('embedded-opentype'),
+    url('fonts/Lobster_1_4.woff2') format('woff2'),
+    url('fonts/Lobster_1_4.woff') format('woff'),
+    url('fonts/Lobster_1_4.ttf') format('truetype'),
+    url('fonts/Lobster_1_4.svg#Lobster_1_4') format('svg');
+}
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('fonts/OpenSansRegular.eot');
+    src: url('fonts/OpenSansRegular.eot') format('embedded-opentype'),
+    url('fonts/OpenSansRegular.woff2') format('woff2'),
+    url('fonts/OpenSansRegular.woff') format('woff'),
+    url('fonts/OpenSansRegular.ttf') format('truetype'),
+    url('fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
+}
+
+
+
+@mixin max-screen($res) {
+    @media screen and (max-width: $res) {
+        @content;
+    }
+}
+
+
+
+body {
+    font-family: 'OpenSansRegular', sans-serif;
+    header {
+        padding: 0;
+
+        .navbar {
+            background-image: linear-gradient(to bottom, #fff 0, #fff 0%);
+            box-shadow: none;
+            border: none;
+
+            .container {
+                .navbar-header {
+                    a.navbar-brand {
+                        font-family: 'Lobster_1_4', sans-serif;
+                        color: #44c0c2;
+                        font-size: 43px;
+                        padding: 40px 0;
+                        @include max-screen(830px){
+                            padding: 40px 15px;
+                        }
+                    }
+                    button {
+                        padding: 40px 15px;
+                        border: none;
+                        .icon-bar {
+                            width: 30px;
+                        }
+                    }
+                }
+                .navbar-collapse{
+                    .navbar-nav {
+                        li {
+                            font-size: 15px;
+                            a{
+                                padding: 42px 26px;
+                                border-bottom: transparent solid 2px;
+                                transition: 0.3s;
+                                color: #484c55;
+                                @include max-screen(830px){
+                                    padding: 42px 13px;
+                                }
+                            }
+                            a:hover {
+                                background-color: #f8f9fb;
+                                color: #49cbcd;
+                                border-bottom: #49cbcd solid 2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

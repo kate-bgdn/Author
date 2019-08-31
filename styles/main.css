@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Lobster_1_4';
+  src: url("fonts/Lobster_1_4.eot");
+  src: url("fonts/Lobster_1_4.eot") format("embedded-opentype"), url("fonts/Lobster_1_4.woff2") format("woff2"), url("fonts/Lobster_1_4.woff") format("woff"), url("fonts/Lobster_1_4.ttf") format("truetype"), url("fonts/Lobster_1_4.svg#Lobster_1_4") format("svg"); }
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url("fonts/OpenSansRegular.eot");
+  src: url("fonts/OpenSansRegular.eot") format("embedded-opentype"), url("fonts/OpenSansRegular.woff2") format("woff2"), url("fonts/OpenSansRegular.woff") format("woff"), url("fonts/OpenSansRegular.ttf") format("truetype"), url("fonts/OpenSansRegular.svg#OpenSansRegular") format("svg"); }
+body {
+  font-family: 'OpenSansRegular', sans-serif; }
+  body header {
+    padding: 0; }
+    body header .navbar {
+      background-image: linear-gradient(to bottom, #fff 0, #fff 0%);
+      box-shadow: none;
+      border: none; }
+      body header .navbar .container .navbar-header a.navbar-brand {
+        font-family: 'Lobster_1_4', sans-serif;
+        color: #44c0c2;
+        font-size: 43px;
+        padding: 40px 0; }
+        @media screen and (max-width: 830px) {
+          body header .navbar .container .navbar-header a.navbar-brand {
+            padding: 40px 15px; } }
+      body header .navbar .container .navbar-header button {
+        padding: 40px 15px;
+        border: none; }
+        body header .navbar .container .navbar-header button .icon-bar {
+          width: 30px; }
+      body header .navbar .container .navbar-collapse .navbar-nav li {
+        font-size: 15px; }
+        body header .navbar .container .navbar-collapse .navbar-nav li a {
+          padding: 42px 26px;
+          border-bottom: transparent solid 2px;
+          transition: 0.3s;
+          color: #484c55; }
+          @media screen and (max-width: 830px) {
+            body header .navbar .container .navbar-collapse .navbar-nav li a {
+              padding: 42px 13px; } }
+        body header .navbar .container .navbar-collapse .navbar-nav li a:hover {
+          background-color: #f8f9fb;
+          color: #49cbcd;
+          border-bottom: #49cbcd solid 2px; }
+
+/*# sourceMappingURL=main.css.map */
