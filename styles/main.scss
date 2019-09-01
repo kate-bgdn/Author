@@ -18,6 +18,15 @@
     url('fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
 }
 
+@font-face {
+    font-family: 'OpenSansSemiBold';
+    src: url('fonts/OpenSansSemiBold.eot');
+    src: url('fonts/OpenSansSemiBold.eot') format('embedded-opentype'),
+    url('fonts/OpenSansSemiBold.woff2') format('woff2'),
+    url('fonts/OpenSansSemiBold.woff') format('woff'),
+    url('fonts/OpenSansSemiBold.ttf') format('truetype'),
+    url('fonts/OpenSansSemiBold.svg#OpenSansSemiBold') format('svg');
+}
 
 
 @mixin max-screen($res) {
@@ -77,6 +86,94 @@ body {
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+    .carousel {
+        margin-top: -20px;
+        .carousel-inner {
+            .item {
+                .carousel-caption {
+                    top: 110px;
+                    @include max-screen(1160px) {
+                        top: 50px;
+                    }
+                    @include max-screen(820px){
+                        top: 0;
+                    }
+                    @include max-screen(500px){
+                        top: -30px;
+                    }
+                    h2 {
+                        font-size: 63px;
+                        font-family: OpenSansSemiBold, sans-serif;
+                        margin-bottom: 30px;
+                        @include max-screen(1225px) {
+                            font-size: 40px;
+                        }
+                        @include max-screen(820px){
+                            font-size: 30px;
+                            margin-bottom: 15px;
+                        }
+                        @include max-screen(500px){
+                            font-size: 25px;
+                        }
+                        @include max-screen(430px){
+                            font-size: 20px;
+                            margin-bottom: 5px;
+                        }
+                    }
+                    p {
+                        font-size: 23px;
+                        max-width: 375px;
+                        margin: 0 auto 60px;
+                        @include max-screen(1225px) {
+                            font-size: 16px;
+                        }
+                        @include max-screen(820px){
+                            font-size: 10px;
+                            margin-bottom: 30px;
+                        }
+                        @include max-screen(430px){
+                            margin-bottom: 10px;
+                        }
+                    }
+                    a {
+                        color: white;
+                        font-size: 26px;
+                        font-family: OpenSansSemiBold, sans-serif;
+                        padding: 20px;
+                        border: solid 2px white;
+                        border-radius: 5px;
+                        @include max-screen(1024px){
+                            padding: 10px 20px;
+                            font-size: 16px;
+                        }
+                        @include max-screen(820px){
+                            font-size: 10px;
+                            border: solid 1px white;
+                        }
+                        @include max-screen(430px){
+                            padding: 5px 10px;
+                        }
+                    }
+                }
+            }
+        }
+        a.carousel-control {
+            span {
+                i {
+                    background-color: white;
+                    opacity: 100%;
+                    width: 50px;
+                    height: 50px;
+                    padding: 12px 15px;
+                    border-radius: 30px;
+                    margin-top: 18vw;
+                    font-size: 26px;
+                    color: #49cbcd;
+                    text-shadow: none;
                 }
             }
         }

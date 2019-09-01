@@ -6,6 +6,10 @@
   font-family: 'OpenSansRegular';
   src: url("fonts/OpenSansRegular.eot");
   src: url("fonts/OpenSansRegular.eot") format("embedded-opentype"), url("fonts/OpenSansRegular.woff2") format("woff2"), url("fonts/OpenSansRegular.woff") format("woff"), url("fonts/OpenSansRegular.ttf") format("truetype"), url("fonts/OpenSansRegular.svg#OpenSansRegular") format("svg"); }
+@font-face {
+  font-family: 'OpenSansSemiBold';
+  src: url("fonts/OpenSansSemiBold.eot");
+  src: url("fonts/OpenSansSemiBold.eot") format("embedded-opentype"), url("fonts/OpenSansSemiBold.woff2") format("woff2"), url("fonts/OpenSansSemiBold.woff") format("woff"), url("fonts/OpenSansSemiBold.ttf") format("truetype"), url("fonts/OpenSansSemiBold.svg#OpenSansSemiBold") format("svg"); }
 body {
   font-family: 'OpenSansRegular', sans-serif; }
   body header {
@@ -41,5 +45,79 @@ body {
           background-color: #f8f9fb;
           color: #49cbcd;
           border-bottom: #49cbcd solid 2px; }
+  body .carousel {
+    margin-top: -20px; }
+    body .carousel .carousel-inner .item .carousel-caption {
+      top: 110px; }
+      @media screen and (max-width: 1160px) {
+        body .carousel .carousel-inner .item .carousel-caption {
+          top: 50px; } }
+      @media screen and (max-width: 820px) {
+        body .carousel .carousel-inner .item .carousel-caption {
+          top: 0; } }
+      @media screen and (max-width: 500px) {
+        body .carousel .carousel-inner .item .carousel-caption {
+          top: -30px; } }
+      body .carousel .carousel-inner .item .carousel-caption h2 {
+        font-size: 63px;
+        font-family: OpenSansSemiBold, sans-serif;
+        margin-bottom: 30px; }
+        @media screen and (max-width: 1225px) {
+          body .carousel .carousel-inner .item .carousel-caption h2 {
+            font-size: 40px; } }
+        @media screen and (max-width: 820px) {
+          body .carousel .carousel-inner .item .carousel-caption h2 {
+            font-size: 30px;
+            margin-bottom: 15px; } }
+        @media screen and (max-width: 500px) {
+          body .carousel .carousel-inner .item .carousel-caption h2 {
+            font-size: 25px; } }
+        @media screen and (max-width: 430px) {
+          body .carousel .carousel-inner .item .carousel-caption h2 {
+            font-size: 20px;
+            margin-bottom: 5px; } }
+      body .carousel .carousel-inner .item .carousel-caption p {
+        font-size: 23px;
+        max-width: 375px;
+        margin: 0 auto 60px; }
+        @media screen and (max-width: 1225px) {
+          body .carousel .carousel-inner .item .carousel-caption p {
+            font-size: 16px; } }
+        @media screen and (max-width: 820px) {
+          body .carousel .carousel-inner .item .carousel-caption p {
+            font-size: 10px;
+            margin-bottom: 30px; } }
+        @media screen and (max-width: 430px) {
+          body .carousel .carousel-inner .item .carousel-caption p {
+            margin-bottom: 10px; } }
+      body .carousel .carousel-inner .item .carousel-caption a {
+        color: white;
+        font-size: 26px;
+        font-family: OpenSansSemiBold, sans-serif;
+        padding: 20px;
+        border: solid 2px white;
+        border-radius: 5px; }
+        @media screen and (max-width: 1024px) {
+          body .carousel .carousel-inner .item .carousel-caption a {
+            padding: 10px 20px;
+            font-size: 16px; } }
+        @media screen and (max-width: 820px) {
+          body .carousel .carousel-inner .item .carousel-caption a {
+            font-size: 10px;
+            border: solid 1px white; } }
+        @media screen and (max-width: 430px) {
+          body .carousel .carousel-inner .item .carousel-caption a {
+            padding: 5px 10px; } }
+    body .carousel a.carousel-control span i {
+      background-color: white;
+      opacity: 100%;
+      width: 50px;
+      height: 50px;
+      padding: 12px 15px;
+      border-radius: 30px;
+      margin-top: 18vw;
+      font-size: 26px;
+      color: #49cbcd;
+      text-shadow: none; }
 
 /*# sourceMappingURL=main.css.map */
