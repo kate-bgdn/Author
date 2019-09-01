@@ -41,6 +41,9 @@ body {
           @media screen and (max-width: 830px) {
             body header .navbar .container .navbar-collapse .navbar-nav li a {
               padding: 42px 13px; } }
+          @media screen and (max-width: 768px) {
+            body header .navbar .container .navbar-collapse .navbar-nav li a {
+              padding: 20px 13px; } }
         body header .navbar .container .navbar-collapse .navbar-nav li a:hover {
           background-color: #f8f9fb;
           color: #49cbcd;
@@ -126,35 +129,83 @@ body {
       color: #4e525d;
       font-size: 42px;
       margin-bottom: 140px; }
-    body section div.container .row div .thumbnail {
-      border: none;
-      box-shadow: none;
-      text-align: center; }
-      body section div.container .row div .thumbnail .user-photo {
-        width: 200px;
-        height: 200px;
-        border-radius: 100px;
-        background-color: #eeeef0;
-        margin: auto; }
-        body section div.container .row div .thumbnail .user-photo img {
+    body section div.container .row {
+      width: 100%; }
+      @media screen and (max-width: 330px) {
+        body section div.container .row {
+          max-width: 280px;
+          margin: auto; } }
+      body section div.container .row div .thumbnail {
+        border: none;
+        box-shadow: none;
+        text-align: center; }
+        @media screen and (max-width: 768px) {
+          body section div.container .row div .thumbnail {
+            max-width: 300px;
+            margin: auto; } }
+        body section div.container .row div .thumbnail .user-photo {
           width: 200px;
           height: 200px;
-          border-radius: 100px; }
-        body section div.container .row div .thumbnail .user-photo a {
-          color: #f46d6d;
-          font-size: 40px;
-          top: 5px;
-          left: 50px;
-          padding: 70px 82px;
-          position: absolute;
-          border-radius: 200px; }
-      body section div.container .row div .thumbnail .caption h3 {
-        font-size: 22px;
-        color: #4e525d;
-        margin-bottom: 2px; }
-      body section div.container .row div .thumbnail .caption p {
-        font-size: 14px;
-        color: #4e525d;
-        margin-bottom: 20px; }
+          border-radius: 100px;
+          background-color: #eeeef0;
+          margin: auto; }
+          body section div.container .row div .thumbnail .user-photo img {
+            width: 200px;
+            height: 200px;
+            border-radius: 100px; }
+          body section div.container .row div .thumbnail .user-photo a {
+            color: #f46d6d;
+            font-size: 40px;
+            width: 200px;
+            position: relative;
+            top: 75px; }
+        body section div.container .row div .thumbnail .caption h3 {
+          font-size: 22px;
+          color: #4e525d;
+          margin-bottom: 2px; }
+        body section div.container .row div .thumbnail .caption p {
+          font-size: 14px;
+          color: #4e525d;
+          margin-bottom: 20px; }
+  body .gray {
+    background-color: #f1f1f1; }
+    body .gray .row div {
+      padding: 0;
+      background-color: inherit; }
+      body .gray .row div .list {
+        background-color: #f8f9fb;
+        margin: 20px 20px; }
+        @media screen and (max-width: 330px) {
+          body .gray .row div .list {
+            margin: 20px 10px; } }
+        body .gray .row div .list h4 {
+          padding: 26px;
+          font-size: 26px;
+          color: white;
+          background-color: #485460;
+          margin: 0; }
+        body .gray .row div .list div {
+          font-size: 20px;
+          color: #485460;
+          padding: 20px;
+          margin: 0; }
+        body .gray .row div .list p {
+          font-size: 14px;
+          padding: 15px;
+          margin: 0;
+          background-color: white;
+          width: 100%;
+          color: #8c9299;
+          border-bottom: 1px solid #ecf0f1; }
+        body .gray .row div .list p:first-of-type {
+          border-top: 1px solid #ecf0f1; }
+        body .gray .row div .list a {
+          margin: 29px 0;
+          font-family: OpenSansSemiBold, sans-serif;
+          color: white;
+          background-color: #788492;
+          width: 200px; }
+        body .gray .row div .list .bg {
+          background-color: #49cbcd; }
 
 /*# sourceMappingURL=main.css.map */

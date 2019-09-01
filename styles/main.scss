@@ -78,6 +78,10 @@ body {
                                 @include max-screen(830px){
                                     padding: 42px 13px;
                                 }
+                                @include max-screen(768px){
+                                    padding: 20px 13px;
+                                }
+
                             }
                             a:hover {
                                 background-color: #f8f9fb;
@@ -188,11 +192,21 @@ body {
                 margin-bottom: 140px;
             }
             .row{
+                width: 100%;
+                @include max-screen(330px){
+                    max-width: 280px;
+                    margin: auto;
+                }
                 div{
+
                     .thumbnail{
                         border: none;
                         box-shadow: none;
                         text-align: center;
+                        @include max-screen(768px){
+                            max-width: 300px;
+                            margin: auto;
+                        }
                         .user-photo{
                             width: 200px;
                             height: 200px;
@@ -207,11 +221,9 @@ body {
                             a{
                                 color: #f46d6d;
                                 font-size: 40px;
-                                top: 5px;
-                                left: 50px;
-                                padding: 70px 82px;
-                                position: absolute;
-                                border-radius: 200px;
+                                width: 200px;
+                                position: relative;
+                                top: 75px;
                             }
                         }
                         .caption{
@@ -226,6 +238,57 @@ body {
                                 margin-bottom: 20px;
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+    .gray{
+        background-color: #f1f1f1;
+        .row{
+            div{
+                padding: 0;
+                background-color: inherit;
+                .list{
+                    background-color: #f8f9fb;
+                    margin: 20px 20px;
+                    @include max-screen(330px){
+                        margin: 20px 10px;
+                    }
+                    h4{
+                        padding: 26px;
+                        font-size: 26px;
+                        color: white;
+                        background-color: #485460;
+                        margin: 0;
+                    }
+                    div{
+                        font-size: 20px;
+                        color: #485460;
+                        padding: 20px;
+                        margin: 0;
+                    }
+                    p{
+                        font-size: 14px;
+                        padding: 15px;
+                        margin: 0;
+                        background-color: white;
+                        width: 100%;
+                        color: #8c9299;
+                        border-bottom: 1px solid #ecf0f1;
+                    }
+                    p:first-of-type{
+                        border-top: 1px solid #ecf0f1;
+                    }
+                    a{
+                        margin: 29px 0;
+                        font-family: OpenSansSemiBold, sans-serif;
+                        color: white;
+                        background-color: #788492;
+                        width: 200px;
+                    }
+                    .bg{
+                        background-color: #49cbcd;
                     }
                 }
             }
