@@ -207,5 +207,73 @@ body {
           width: 200px; }
         body .gray .row div .list .bg {
           background-color: #49cbcd; }
+  body footer {
+    background: url("../images/footer-bg.png") no-repeat;
+    background-size: cover;
+    padding: 100px 0; }
+    body footer .container h5 {
+      text-align: center;
+      color: white;
+      font-size: 42px;
+      margin-bottom: 60px; }
+    body footer .container .row div h3 {
+      font-size: 24px;
+      color: #ffffff;
+      margin-bottom: 18px; }
+    body footer .container .row div p {
+      color: white;
+      font-size: 12px;
+      max-width: 430px;
+      margin-bottom: 40px; }
+    body footer .container .row div div {
+      margin-bottom: 30px; }
+      body footer .container .row div div a {
+        color: white;
+        font-size: 24px;
+        background-color: #3ec2f3;
+        padding: 10px 8px 10px 13px;
+        margin: 0 15px 0 0;
+        border-radius: 50px; }
+        body footer .container .row div div a i {
+          margin-left: 2px; }
+      body footer .container .row div div a:hover {
+        text-decoration: none; }
+      body footer .container .row div div a:first-child {
+        background-color: #3b5997;
+        margin-left: 0; }
+        body footer .container .row div div a:first-child i {
+          margin: 0 7px; }
+      body footer .container .row div div a:last-child {
+        background-color: #e44c41;
+        padding: 10px 10px 10px 11px; }
+    body footer .container .row div .contacts {
+      color: #bface2;
+      margin-bottom: 5px; }
+    body footer .container .row div form {
+      margin-top: 10px; }
+      body footer .container .row div form input, body footer .container .row div form textarea {
+        border: none;
+        box-shadow: none;
+        padding: 15px 20px;
+        border-radius: 3px;
+        background-color: white;
+        box-sizing: border-box; }
+      body footer .container .row div form input {
+        margin-left: 3px; }
+        @media screen and (max-width: 768px) {
+          body footer .container .row div form input {
+            margin: 3px; } }
+      body footer .container .row div form textarea {
+        margin: 30px 3px;
+        height: 180px;
+        resize: none; }
+      body footer .container .row div form button {
+        padding: 12px 20px;
+        font-size: 20px;
+        border-radius: 3px;
+        box-shadow: none;
+        border: none;
+        background-color: #49cbcd;
+        color: white; }
 
 /*# sourceMappingURL=main.css.map */

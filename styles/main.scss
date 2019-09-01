@@ -294,4 +294,98 @@ body {
             }
         }
     }
+    footer{
+        background: url("../images/footer-bg.png") no-repeat;
+        background-size: cover;
+        padding: 100px 0;
+        .container{
+            h5{
+                text-align: center;
+                color: white;
+                font-size: 42px;
+                margin-bottom: 60px;
+            }
+            .row{
+                div{
+                    h3{
+                        font-size: 24px;
+                        color: #ffffff;
+                        margin-bottom: 18px;
+                    }
+                    p{
+                        color: white;
+                        font-size: 12px;
+                        max-width: 430px;
+                        margin-bottom: 40px;
+                    }
+
+                    div{
+                        margin-bottom: 30px;
+                        a{
+                            color: white;
+                            font-size: 24px;
+                            background-color: #3ec2f3;
+                            padding: 10px 8px 10px 13px;
+                            margin: 0 15px 0 0;
+                            border-radius: 50px;
+                            i{
+                                margin-left: 2px;
+                            }
+                        }
+                        a:hover{
+                            text-decoration: none;
+                        }
+                        a:first-child{
+                            background-color: #3b5997;
+                            margin-left: 0;
+                            i{
+                                margin: 0 7px;
+                            }
+                        }
+                        a:last-child{
+                            background-color: #e44c41;
+                            padding: 10px 10px 10px 11px;
+                        }
+                    }
+                    .contacts{
+                        color: #bface2;
+                        margin-bottom: 5px;
+                    }
+
+                    form{
+                        margin-top: 10px;
+                        input, textarea{
+                            border: none;
+                            box-shadow: none;
+                            padding: 15px 20px;
+                            border-radius: 3px;
+                            background-color: white;
+                            box-sizing: border-box;
+                        }
+                        input{
+                            margin-left: 3px;
+                            @include max-screen(768px){
+                                margin: 3px;
+                            }
+                        }
+                        textarea{
+                            margin: 30px 3px;
+                            height: 180px;
+                            resize: none;
+                        }
+                        button{
+                            padding: 12px 20px;
+                            font-size: 20px;
+                            border-radius: 3px;
+                            box-shadow: none;
+                            border: none;
+                            background-color: #49cbcd;
+                            color: white;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
