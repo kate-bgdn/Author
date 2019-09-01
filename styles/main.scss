@@ -178,5 +178,57 @@ body {
             }
         }
     }
-
+    section {
+        div.container {
+            padding: 110px 0;
+            h1 {
+                text-align: center;
+                color: #4e525d;
+                font-size: 42px;
+                margin-bottom: 140px;
+            }
+            .row{
+                div{
+                    .thumbnail{
+                        border: none;
+                        box-shadow: none;
+                        text-align: center;
+                        .user-photo{
+                            width: 200px;
+                            height: 200px;
+                            border-radius: 100px;
+                            background-color: #eeeef0;
+                            margin: auto;
+                            img{
+                                width: 200px;
+                                height: 200px;
+                                border-radius: 100px;
+                            }
+                            a{
+                                color: #f46d6d;
+                                font-size: 40px;
+                                top: 5px;
+                                left: 50px;
+                                padding: 70px 82px;
+                                position: absolute;
+                                border-radius: 200px;
+                            }
+                        }
+                        .caption{
+                            h3{
+                                font-size: 22px;
+                                color: #4e525d;
+                                margin-bottom: 2px;
+                            }
+                            p{
+                                font-size: 14px;
+                                color: #4e525d;
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
