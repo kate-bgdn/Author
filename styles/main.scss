@@ -184,11 +184,12 @@ body {
     }
     section {
         div.container {
-            padding: 110px 0;
+            padding: 60px 0;
             h1 {
                 text-align: center;
                 color: #4e525d;
                 font-size: 42px;
+                margin-top: 50px;
                 margin-bottom: 140px;
             }
             .row{
@@ -198,7 +199,6 @@ body {
                     margin: auto;
                 }
                 div{
-
                     .thumbnail{
                         border: none;
                         box-shadow: none;
@@ -213,10 +213,11 @@ body {
                             border-radius: 100px;
                             background-color: #eeeef0;
                             margin: auto;
+                            overflow: hidden;
+                            background-size: cover;
+                            background-position: center center;
                             img{
-                                width: 200px;
-                                height: 200px;
-                                border-radius: 100px;
+                                width: 100%;
                             }
                             a{
                                 color: #f46d6d;
@@ -226,16 +227,36 @@ body {
                                 top: 75px;
                             }
                         }
+                        .user-photo:after{
+                            position: absolute;
+                            content: '+';
+                            font-size: 50px;
+                            font-weight: bold;
+                            color: #ff253a;
+                            top: 70px;
+                            left: 135px;
+                            opacity: 0;
+                            transition: 0.3s;
+                        }
+                        .user-photo:hover{
+                            &:after{
+                                opacity: 1;
+                            }
+                        }
                         .caption{
                             h3{
                                 font-size: 22px;
                                 color: #4e525d;
-                                margin-bottom: 2px;
+                                margin-bottom: 20px;
+                                span{
+                                    margin-top: 2px;
+                                    font-size: 14px;
+                                    display: block;
+                                }
                             }
                             p{
                                 font-size: 14px;
                                 color: #4e525d;
-                                margin-bottom: 20px;
                             }
                         }
                     }
@@ -245,50 +266,66 @@ body {
     }
     .gray{
         background-color: #f1f1f1;
-        .row{
-            div{
-                padding: 0;
-                background-color: inherit;
-                .list{
-                    background-color: #f8f9fb;
-                    margin: 20px 20px;
-                    @include max-screen(330px){
-                        margin: 20px 10px;
-                    }
-                    h4{
-                        padding: 26px;
-                        font-size: 26px;
-                        color: white;
-                        background-color: #485460;
-                        margin: 0;
-                    }
-                    div{
-                        font-size: 20px;
-                        color: #485460;
-                        padding: 20px;
-                        margin: 0;
-                    }
-                    p{
-                        font-size: 14px;
-                        padding: 15px;
-                        margin: 0;
-                        background-color: white;
-                        width: 100%;
-                        color: #8c9299;
-                        border-bottom: 1px solid #ecf0f1;
-                    }
-                    p:first-of-type{
-                        border-top: 1px solid #ecf0f1;
-                    }
-                    a{
-                        margin: 29px 0;
-                        font-family: OpenSansSemiBold, sans-serif;
-                        color: white;
-                        background-color: #788492;
-                        width: 200px;
-                    }
-                    .bg{
-                        background-color: #49cbcd;
+        .container{
+            .row{
+                div{
+                    padding: 0;
+                    background-color: inherit;
+                    .cupone{
+                        margin: 50px 1px;
+                        ul{
+                            list-style: none;
+                            text-align: center;
+                            margin: 0;
+                            li{
+                                font-size: 14px;
+                                padding: 15px;
+                                margin: 0;
+                                background-color: white;
+                                width: 100%;
+                                color: #8c9299;
+                                border-bottom: 1px solid #ecf0f1;
+                                &:first-of-type{
+                                    font-size: 20px;
+                                    background-color: #f8f9fb;
+                                    color: #485460;
+                                }
+                            }
+                        }
+                        ol{
+                            list-style: none;
+                            text-align: center;
+                            margin: 0;
+                            li{
+                                padding: 26px;
+                                font-size: 26px;
+                                color: white;
+                                background-color: #485460;
+                                margin: 0;
+                            }
+                            .bg{
+                                background-color: #49cbcd;
+                            }
+                            &:last-of-type{
+                                li{
+                                    background-color: #f8f9fb;
+                                    padding: 29px 0;
+                                    a{
+                                        font-size: 20px;
+                                        margin: 29px auto;
+                                        text-decoration: none;
+                                        font-family: OpenSansSemiBold, sans-serif;
+                                        color: white;
+                                        background-color: #788492;
+                                        padding: 7px 40px;
+                                        border-radius: 3px;
+                                    }
+                                    .bg{
+                                        background-color: #49cbcd;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
